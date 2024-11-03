@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="320.0" prefWidth="422.0" stylesheets="@Checkout.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+       <Label id="header" layoutX="35.0" layoutY="14.0" text="Enter Payment Details" />
+   
+          <Label id="labels" layoutX="34.0" layoutY="91.0" text="Credit Card Number:" />
+       <TextField id="fields" fx:id="cardNumberField" layoutX="192.0" layoutY="80.0" promptText="Enter Credit Number">
+         <tooltip>
+            <Tooltip text="16 digit number" />
+         </tooltip></TextField>
+   
+          <Label id="labels" layoutX="34.0" layoutY="143.0" text="Expiry Date (MM/YY):" />
+   
+          <Label id="labels" layoutX="34.0" layoutY="195.0" text="CVV:" />
+       <TextField id="fields" fx:id="cvvField" layoutX="191.0" layoutY="184.0" promptText="Enter CVV">
+         <tooltip>
+            <Tooltip text="3 digit " />
+         </tooltip></TextField>
+   
+          <Button id="button" fx:id="checkoutButton" layoutX="135.0" layoutY="230.0"  text="Complete Checkout" />
+      <Label id="message" layoutX="114.0" layoutY="282.0" prefHeight="18.0" prefWidth="220.0" />
+      <Label layoutX="50.0" layoutY="58.0" minHeight="4.0" prefHeight="4.0" prefWidth="340.0" style="-fx-background-color: black;" />
+      <DatePicker id="fields" fx:id="expiryDateField" layoutX="192.0" layoutY="127.0" prefHeight="25.0" prefWidth="200.0" promptText="Select Expiry Date" />
+   </children>
+</Pane>

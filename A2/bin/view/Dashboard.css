@@ -1,0 +1,36 @@
+.root {
+    -fx-font-family: 'Consolas', sans-serif;
+}
+
+#left-pane{
+    -fx-background-color: skyblue;
+}
+.button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #3498db;
+}
+
+
+#header{
+    -fx-font-size: 30px;
+}
+#sub-header{
+    -fx-font-size: 20px;
+}
+.book-item {
+    -fx-font-family: 'Consolas','sans-serif';
+    -fx-font-size: 20px;
+}
+
+#footer{
+    -fx-font-size: 20px;
+}
