@@ -1,0 +1,55 @@
+.root {
+    -fx-font-family: 'Consolas', sans-serif;
+}
+#login-pane {
+    -fx-background-color: #f0f0f5;
+    -fx-padding: 40px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0, 0, 4);
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-min-width: 350px;
+}
+
+#login-header {
+    -fx-font-size: 32px;
+    -fx-font-family: 'Consolas', sans-serif;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+#login-label {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Consolas', sans-serif;
+    -fx-text-fill: #34495e;
+}
+
+#name-field, #password-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-background-color: #ecf0f1;
+    -fx-min-width: 300px;
+}
+
+#login, #signup {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+#login:hover, #signup:hover {
+    -fx-background-color: #3498db;
+}
+
+#message-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: red;
+    -fx-alignment: center;
+}

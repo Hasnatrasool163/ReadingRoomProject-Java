@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="900" stylesheets="@Dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+
+    <center>
+        <VBox id="dashboardContent" alignment="CENTER" prefHeight="565.0" prefWidth="748.0" spacing="20" style="-fx-background-color: white;">
+            <Pane prefHeight="158.0" prefWidth="748.0" style="-fx-background-color: white;">
+                <children>
+                    <Label id="header" fx:id="welcomeLabel" alignment="CENTER" layoutX="308.0" layoutY="33.0" text="Welcome!" textAlignment="JUSTIFY" />
+                    <Label id="header" fx:id="welcomeLabel1" alignment="CENTER" layoutX="308.0" layoutY="90.0" text="mkhoraid" textAlignment="JUSTIFY" textFill="#42c942" />
+                </children>
+            </Pane>
+            <Label id="sub-header" text="Top 5 Popular Books" />
+            <ListView fx:id="popularBooksList" prefHeight="172.0" prefWidth="748.0" />
+            <HBox id="footer" alignment="CENTER" prefHeight="23.0" prefWidth="735.0" spacing="20" style="-fx-background-color: white;">
+                <children>
+                    <Label id="footer" alignment="BOTTOM_RIGHT" text="The Reading Room" textFill="#e82b2b" />
+                </children>
+            </HBox>
+        </VBox>
+    </center>
+
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Profile">
+                    <items>
+                        <MenuItem fx:id="viewProfile" mnemonicParsing="false" text="Edit Profile" />
+                        <MenuItem fx:id="logout" mnemonicParsing="false" text="Logout" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <left>
+        <VBox prefHeight="574.0" prefWidth="152.0" BorderPane.alignment="CENTER">
+            <Pane id="left-pane" prefHeight="579.0" prefWidth="152.0">
+                <Button fx:id="viewOrdersButton" layoutX="18.0" layoutY="174.0" styleClass="nav-button" text="View Orders" />
+                <Button fx:id="editProfileButton" layoutX="15.0" layoutY="100.0" styleClass="nav-button" text="Edit Profile" />
+                <Button fx:id="logoutButton" layoutX="35.0" layoutY="480.0" styleClass="logout-button" text="Logout" />
+                <Button fx:id="viewCart" layoutX="20.0" layoutY="242.0" prefHeight="37.0" prefWidth="120.0" styleClass="nav-button" text="View Cart" />
+                <Button fx:id="viewBookStore" layoutX="21.0" layoutY="315.0" prefHeight="37.0" prefWidth="120.0" styleClass="nav-button" text="BookStore" />
+            </Pane>
+        </VBox>
+    </left>
+
+</BorderPane>
