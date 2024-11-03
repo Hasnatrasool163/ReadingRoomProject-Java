@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="386.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <Label id="login-header" layoutX="163.0" layoutY="51.0" text="Login">
+      <font>
+         <Font name="Consolas" size="27.0"/>
+      </font>
+   </Label>
+   <Label id="login-header" layoutX="105.0" layoutY="98.0" text="To ReadingRoom">
+      <font>
+         <Font name="Consolas" size="27.0"/>
+      </font>
+   </Label>
+   <Label id="message-label" fx:id="message" layoutX="103.0" layoutY="350.0" prefHeight="18.0" prefWidth="218.0"/>
+   <PasswordField id="password" fx:id="password" layoutX="128.0" layoutY="232.0" prefHeight="33.0" prefWidth="208.0"
+                  promptText="Enter Password">
+      <font>
+         <Font name="Consolas" size="17.0"/>
+      </font>
+   </PasswordField>
+   <TextField id="name" fx:id="username" layoutX="126.0" layoutY="166.0" prefHeight="33.0" prefWidth="208.0"
+              promptText="Enter UserName">
+      <font>
+         <Font name="Consolas" size="17.0"/>
+      </font>
+   </TextField>
+   <Label id="login-label" layoutX="36.0" layoutY="169.0" text="Username">
+      <font>
+         <Font name="Consolas" size="17.0"/>
+      </font>
+   </Label>
+   <Label id="login-label" layoutX="36.0" layoutY="234.0" text="Password">
+      <font>
+         <Font name="Consolas" size="17.0"/>
+      </font>
+   </Label>
+   <Button id="login" fx:id="login" layoutX="117.0" layoutY="291.0" stylesheets="@Login.css" text="Login">
+      <font>
+         <Font name="Consolas" size="17.0"/>
+      </font>
+   </Button>
+   <Button id="signup" fx:id="signup" layoutX="215.0" layoutY="291.0" stylesheets="@Login.css" text="Signup">
+      <font>
+         <Font name="Consolas" size="17.0"/>
+      </font>
+   </Button>
+   <Label layoutX="50.0" layoutY="129.0" minHeight="4.0" prefHeight="4.0" prefWidth="331.0"
+          style="-fx-background-color: black;"/>
+   <Label layoutX="104.0" layoutY="82.0" minHeight="4.0" prefHeight="4.0" prefWidth="208.0"
+          style="-fx-background-color: black;"/>
+</Pane>

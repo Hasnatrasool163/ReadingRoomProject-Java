@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="600" prefWidth="900" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersController">
+
+    <top>
+        <HBox alignment="CENTER" spacing="20">
+            <Label styleClass="header" text="Your Orders" />
+            <Button onAction="#handleExportOrders" styleClass="nav-button" text="Export Orders" />
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="ordersTable">
+            <columns>
+                <TableColumn fx:id="orderNumberColumn" prefWidth="120" text="Order Number" />
+                <TableColumn fx:id="dateTimeColumn" prefWidth="200" text="Date &amp; Time" />
+                <TableColumn fx:id="totalPriceColumn" prefWidth="150" text="Total Price (AUD)" />
+            <TableColumn fx:id="quantityColumn" prefWidth="176.0" text="Quantity" />
+                <TableColumn fx:id="booksPurchasedColumn" prefWidth="299.0" text="Books Purchased" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="20">
+            <Button onAction="#handleLogout" styleClass="logout-button" text="Close" />
+        </HBox>
+    </bottom>
+</BorderPane>
