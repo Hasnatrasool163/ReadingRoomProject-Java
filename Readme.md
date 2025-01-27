@@ -32,7 +32,6 @@ To build an intuitive and efficient application that simplifies book management 
   - Adaptive layouts ensure a consistent experience across devices. 📱💻
 
 ## Screenshots
-(Add your screenshots below to showcase the application's interface and features)
 
 1. *Check Out*
    ![all_items_checkout](https://github.com/user-attachments/assets/716f7bd8-fe12-4e2c-a6fb-970459e0a9cc)
@@ -51,7 +50,7 @@ To build an intuitive and efficient application that simplifies book management 
 
 
 5. *Login Screen*
-   ![Responsive Layout](#)![final_login_design](https://github.com/user-attachments/assets/dd1c0fdd-2a05-4aca-bb81-3d482797cbef)
+   ![final_login_design](https://github.com/user-attachments/assets/dd1c0fdd-2a05-4aca-bb81-3d482797cbef)
 
 
 ## Contact Me
